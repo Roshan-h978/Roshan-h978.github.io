@@ -1,0 +1,525 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111B29; /* Darker background */
+    color: #F0F4F8; /* Lighter text */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #9B4D96, #F5A623); /* New gradient colors */
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 50% 10px;
+    border-bottom-right-radius: 50% 10px;
+}
+
+.hero-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    transition: 0.4s;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation */
+nav {
+    background: #2C3E50; /* Darker background */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #FFD700; /* Bright gold color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    transition: 0.3s;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover {
+    background: #FFD700;
+    color: #2C3E50;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    background: #34495E; /* Darker background */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    background: #F39C12; /* Hover effect with a bright yellow color */
+}
+
+h2 {
+    color: #F39C12; /* Bright yellow color */
+    margin-bottom: 20px;
+}
+
+/* Policies List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #F5A623; /* Soft yellow */
+    color: white;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover {
+    background: #9B4D96; /* Purple color on hover */
+    color: #F5A623;
+}
+
+/* Video Container */
+#video .video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Individual Videos */
+#video .video-container video {
+    width: 300px; /* Set width to make the videos smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #video .video-container video {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 900px; /* Set a maximum width for the gallery container */
+    margin: 0 auto; /* Center the gallery container */
+    padding: 20px;
+}
+
+/* Gallery Images */
+.gallery img {
+    width: 28%; /* Adjust image width to make them smaller */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+    border: 3px solid #F5A623; /* Border color */
+}
+
+/* Hover Effects for Gallery Images */
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 45%; /* Increase image width on smaller screens */
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2C3E50; /* Dark background */
+    color: white;
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Styling for map container */
+.map-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Our Work Section */
+#our-work {
+    padding: 60px 20px;
+    background-color: #34495E;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#our-work h2 {
+    color: #F39C12;
+    margin-bottom: 20px;
+}
+
+#our-work p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Work Gallery */
+.work-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-item {
+    width: 30%;
+    background: #2C3E50;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.work-item h3 {
+    color: #F39C12;
+    margin-bottom: 10px;
+}
+
+.work-item p {
+    color: #BDC3C7;
+    font-size: 16px;
+}
+
+/* Hover effect */
+.work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Section styling */
+#team {
+    background: linear-gradient(145deg, #FF7F50, #FF6347);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+#team h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Section styling */
+#team {
+    background: linear-gradient(145deg, #FF7F50, #FF6347);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+#team h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Section styling */
+#team {
+    background: linear-gradient(145deg, #FF7F50, #FF6347);
+    padding: 50px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Heading */
+#team h2 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s;
+}
+
+/* Heading Hover Effect */
+#team h2:hover {
+    transform: scale(1.1);
+}
+
+/* Team Member Container */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Photo Container */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+/* Photo Wrapper for Hover Effect */
+.photo-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s;
+}
+
+/* Leader Photo */
+.leader-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+/* QR Code Styling */
+.qr-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects for Images */
+.photo-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.photo-wrapper:hover .leader-photo {
+    transform: scale(1.15);
+}
+
+.photo-wrapper:hover .qr-photo {
+    transform: scale(1.15);
+}
+
+/* Team Member Name */
+#team h3 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s;
+}
+
+/* Description text */
+#team p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6;
+    font-style: italic;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s;
+}
+
+/* Hover Effect on Name and Description */
+#team h3:hover, #team p:hover {
+    transform: translateY(-5px);
+}
+
+/* Gradient Overlay for Section */
+#team::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #team {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .team-member {
+        gap: 15px;
+    }
+
+    /* Adjust photo sizes for smaller screens */
+    .leader-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .qr-photo {
+        width: 80px; /* Slightly larger to make it stand out more */
+        height: 80px;
+        border-radius: 50%; /* Keep the rounded look */
+        object-fit: cover; /* Ensure the QR code fits well within the circle */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow effect */
+        border: 3px solid #FF6347; /* Border color to match the theme */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    }
+    
+    /* Hover Effect for QR Code */
+    .qr-photo:hover {
+        transform: scale(1.1); /* Slightly enlarge on hover */
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Increase shadow on hover for more depth */
+    }
+    
+    /* Stack photos vertically for mobile */
+    .photo-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Heading size adjustment for smaller screens */
+    #team h2 {
+        font-size: 2.2rem;
+    }
+
+    #team h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/* Links */
+a {
+    color: #ff6a00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #ff6a00;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff7b7b;
+}
+
+/* Styling for the vote image */
+.vote-img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.vote-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
